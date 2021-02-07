@@ -116,6 +116,8 @@
     margin-top: 9px;
     align-items: center;
     cursor: pointer;
+    background-color: #ffffff;
+    padding: 6px 7px;
 }
 
 .menu-tweet-button:hover {
@@ -136,7 +138,7 @@
 
 .menu-twitter-icon {
     display: flex;
-    margin: 7px;
+    margin-right: 6px;
     background-image: url(content/icon/twitter-icon.svg);
     height: 16px;
     width: 16px;
@@ -225,6 +227,7 @@
     border-top: 1px dashed rgba(229, 229, 229, 1);
     border-bottom: 1px dashed rgba(229, 229, 229, 1);
     align-items: center;
+    margin-top: 30px;
 }
 
 input {
@@ -237,7 +240,7 @@ input::placeholder {
     color: rgba(229, 229, 229, 1);
 }
 
-button {
+.subscribe-button {
     margin-left: 18px;
     background: linear-gradient(rgba(244, 243, 243, 1), rgba(187, 185, 185, 1));
     border: 1px solid rgba(229, 229, 229, 1);
@@ -270,16 +273,14 @@ button {
     flex-direction: row;
     width: 896px;
     margin-top: 29px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card-block {
     display: flex;
     flex-direction: column;
     width: 207px;
-}
-
-.card-block:not(:last-child) {
-    margin-right: 23px;
 }
 
 .card-block-background {
@@ -289,6 +290,11 @@ button {
     box-sizing: border-box;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    overflow: hidden;
+}
+
+.card-block-background > img {
+    width: 100%;
 }
 
 .card-text-header {
@@ -387,9 +393,14 @@ button {
     cursor: pointer;
 }
 
-.footer-info-other-text:not(:first-child) {
-    padding: 0 5px;
+/*
+.footer-info-other-text + .footer-info-other-text::before {
+    content: '|';
+    color: rgba(229, 229, 229, 1);
+    margin: 0 5px;
+    pointer-events: none;
 }
+*/
 
 .footer-info-other-text:hover {
     color: rgb(38, 126, 121);
