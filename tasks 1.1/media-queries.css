@@ -1,0 +1,170 @@
+@media screen and (max-width: 992px){
+
+    .desktop {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .desktop-top {
+        width: 100%;
+        flex-direction: column;
+    }
+
+/*  Меню  */
+
+    .menu {
+        flex-direction: row;
+    }
+
+    .icon-logo {
+        margin-right: 90px;
+    }
+
+    .menu-container {
+        flex-direction: row;
+        margin-top: 49px;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        padding: 3px 2px;
+    }
+
+    .text-menu-item {
+        margin: 12px 0 0 0;
+        justify-content: center;
+    }
+
+    .menu-tweet {
+        display: none;
+    }
+
+    /*  Контент  */
+
+    .main {
+        width: 100%;
+        margin: 31px 0 0 0;
+    }
+
+    .baner {
+        background-size: 100%;
+    }
+
+    .tabs-item {
+        padding: 10px 0;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .tabs-text {
+        display: none;
+    }
+
+    form {
+        display: flex;
+        margin-left: 8px;
+    }
+
+    .card-image-wrapper {
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
+    }
+
+    /*  Футер  */
+
+    .footer {
+        width: 100%;
+        align-items: flex-start;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu-container {
+        margin-top: 71px;
+    }
+
+    .text-menu-item {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .icon-logo {
+        margin-top: 21px;
+        margin-right: 10px;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    /* Контент */
+
+    .main {
+        margin: 20px 0 0 0;
+    }
+
+    .baner-header {
+        background-color: rgba(255, 255, 255, 0.26);
+        width: 100%;
+        margin-top: 37%;
+    }
+
+    .baner-description {
+        width: 100%;
+        margin: 0%;
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .subscription-box {
+        flex-wrap: wrap;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .menu {
+        flex-direction: column;
+        padding: 0 19px;
+    }
+
+    .menu-container {
+        margin: 32px 0;
+        
+    }
+
+    .icon-logo {
+        margin: 0;
+        margin-left: 37%;
+    }
+
+    /*  Контент  */
+
+    .main {
+        margin-top: 43px;
+    }
+
+    .baner-header {
+        padding-left: 6px;
+    }
+
+    .baner-description {
+        padding-left: 6px;
+    }
+}
