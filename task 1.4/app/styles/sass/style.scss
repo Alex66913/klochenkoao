@@ -1,0 +1,51 @@
+@import 'globals/colors';
+@import 'globals/icon';
+@import 'globals/mixin';
+@import 'globals/typography';
+
+
+body {
+    display: flex;
+    justify-content: center;    
+}
+
+.desktop {
+    display: flex;
+    flex-direction: column;
+    width: 1088px;
+}
+
+.desktop-top {
+    display: flex;
+    flex-direction: row;
+}
+
+//// aside ////
+
+@import 'components/aside/aside';
+@import 'components/aside/logo';
+@import 'components/aside/menu';
+@import 'components/aside/tweet';
+
+//// main ////
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+    width: 896px;
+
+    margin: 0 44px;
+}
+
+@import 'components/main/banner';
+@import 'components/main/tabs';
+@import 'components/main/subscription';
+@import 'components/main/card';
+
+//// footer ////
+
+@import 'components/footer/footer';
+
+
+@import 'globals/media';

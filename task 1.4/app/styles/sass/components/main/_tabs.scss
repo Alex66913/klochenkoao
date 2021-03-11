@@ -1,0 +1,34 @@
+.tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+
+        width: 224px;
+
+        padding: 26px 0 22px 20px;
+
+        background-color: $tabs;
+
+        @include link;
+
+        font-size: $size_large;
+
+        &:active {
+            color: $tabs_active;
+        }
+
+        &:hover {
+            background-color: $tabs_hover;
+        }
+    }
+
+    .text {
+        font-weight: 400;
+        font-style: italic;
+        font-size: $size_tiny;
+    }
+}

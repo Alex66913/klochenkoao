@@ -1,0 +1,62 @@
+.tweet { 
+    display: flex;
+    flex-direction: column;
+    
+    height: 61px;
+
+    .title{
+        display: flex;
+
+        width: 140px;
+
+        font-family: $family_verdana;
+        font-size: $size_small;
+
+        padding: 5px 0;
+
+        border-bottom: 1px dashed $light;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        border-radius: 5px;
+
+        @include link;
+
+        font-style: italic;
+        font-size: $size_tiny;
+
+        border: 1px solid $light;
+
+        margin-top: 9px;
+        padding: 6px 7px;
+
+        background-color: $white;
+
+        &:hover {
+            background-color: $main_hover;
+        } 
+
+        .icon {
+            display: flex;
+
+            height: 16px;
+            width: 16px;
+
+            margin-right: 6px;
+
+            background-image: $menu-twitter;
+        }
+    }
+    .text {
+        display: flex;
+
+        font-family: $family_arial;
+        font-style: italic;
+
+        font-size: $size_tiny;
+        line-height: $height_large;
+    }
+}

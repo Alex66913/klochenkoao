@@ -1,0 +1,98 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 2px solid $light;
+
+    margin-top: 44px;
+
+    .info {
+        display: flex;
+        flex-direction: column;
+
+        .other {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            margin: 26px 0 0 3px;
+
+            color: $light;
+
+            .text {
+                padding: 0 5px;
+                
+                font-size: $size_small;
+                line-height: $height_medium;
+                letter-spacing: -0.02em;
+
+                @include link;
+
+                &:not(:first-child)::before {
+                    margin-right: 5px;
+                    
+                    content: '|';
+                    color: $light;
+                    
+                    cursor: default;
+                }
+                
+                &:hover {
+                    color: $main_active;
+                }
+
+                &:active {
+                    color: $card_header_active;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        padding-left: 8px;
+        
+        font-family: $family_arial;
+        font-size: $size_small;
+        line-height: $height_medium;
+        letter-spacing: -0.02em;
+
+        color: $light;
+    }
+
+    .icon-box {
+        display: flex;
+
+        margin-top: 23px;
+
+        .icon {
+            width: 32px;
+            height: 32px;
+
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-right: 4px;
+            }
+
+
+            //@each $icon in twitter, fb, rss {
+            //    .#{$icon} {
+            //        background-image: url('../../icon/#{$icon}.svg');
+            //    }
+            //}
+
+
+            &.twitter {
+                background-image: $twitter;
+            }
+
+            &.fb {
+                background-image: $fb;
+            }
+
+            &.rss {
+                background-image: $rss;
+            }
+        }
+    }
+}

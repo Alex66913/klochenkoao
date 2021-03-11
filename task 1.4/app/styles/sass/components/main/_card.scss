@@ -1,0 +1,105 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    max-width: 896px;
+
+    margin-top: 29px;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+
+        max-width: 207px;
+
+        .image-wrapper {
+            box-sizing: border-box;
+            overflow: hidden;
+            
+            max-width: 100%;
+            max-height: 143px;
+
+            border: 11px solid $white;
+
+            box-shadow: 0 1px 2px 0 $shadow;
+
+            cursor: pointer;
+
+            .background > img {
+                width: 100%;
+            }
+        }
+
+        .header {
+            margin-top: 11px;
+            
+            @include link;
+
+            font-size: $size_big;
+            line-height: $height_large;
+            letter-spacing: -0.02em;
+
+            &:hover {
+                color: $main_active;
+            }
+
+            &:active {
+                color: $card_header_active;
+            }
+        }
+
+        .excerpt {
+            margin-top: 9px;
+
+            font-family: $family_arial;
+            font-size: $size_medium;
+            line-height: $height_large;
+            letter-spacing: -0.02em;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+
+            margin-top: 11px;
+        }
+
+        .date {
+            width: 90px;
+
+            font-family: $family_arial;
+            font-size: $size_medium;
+            line-height: $height_large;
+            letter-spacing: -0.02em;
+
+            color: $light;
+
+            cursor: pointer;
+
+            &:active {
+                color: $card_date_active;
+            }
+        }
+
+        .more {
+            font-family: $family_arial;
+            font-size: $size_medium;
+            line-height: $height_large;
+            letter-spacing: -0.02em;
+
+            cursor: pointer;
+
+            color: $main;
+
+            &:hover {
+                color: $main_active;
+            }
+
+            &:active {
+                color: $card_header_active;
+            }
+        }
+    }
+}

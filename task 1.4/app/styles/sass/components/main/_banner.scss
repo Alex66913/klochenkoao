@@ -1,0 +1,42 @@
+.baner {
+    display: flex;
+    flex-direction: column;
+
+    background-image: $banner;
+    overflow: hidden;
+
+    .header {
+        display: flex;
+        align-items: center;
+
+        width: 272px;
+        min-height: 50px;
+
+        padding-left: 26px;
+        margin-top: 32%;
+
+        font-family: $family_arial;
+        font-size: $size_huge;
+        font-style: italic;
+
+        background: $white;
+    }
+
+    .description {
+        display: flex;
+        align-items: center;
+
+        width: 487px;
+        min-height: 42px;
+
+        padding-left: 26px;
+        margin-bottom: 5%;
+
+        background: $black;
+        color: $white;
+
+        font-family: $family_arial;
+        font-style: italic;
+        font-size: $size_medium;
+    }
+}

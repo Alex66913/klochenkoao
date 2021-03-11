@@ -1,0 +1,10 @@
+@mixin link {
+        color: $main;
+        
+        &:active {
+            color: $main_active;
+        }
+
+        font-family: $family_arial;
+        cursor: pointer;
+}
