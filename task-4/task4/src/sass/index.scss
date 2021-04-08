@@ -1,0 +1,53 @@
+@import "./globals/colors";
+@import "./globals/mixin";
+@import "./globals/media";
+@import "./globals/typography";
+@import "./components/bars";
+@import "./components/button";
+@import "./globals/media";
+
+
+.app {
+    display: flex;
+    
+    // overflow: hidden;
+    
+    // width: auto;
+
+    border: 1px solid black;
+    padding: 10px;
+
+    font-family: $family_roboto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+    margin: 0 5px 5px 0;
+    
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    height: 195px;
+
+    flex: 1;
+}
+
+p {
+    margin: 10px 0  5px 0;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.hiddenWrapper {
+    margin: 0 5px 5px 0;
+    padding: 5px;
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.modal-wrapper{
+    width: 100%;
+}

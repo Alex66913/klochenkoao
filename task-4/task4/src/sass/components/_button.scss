@@ -1,0 +1,26 @@
+.btn {
+    max-width: 280px;
+    height: 31px;
+    box-shadow: 0 0 3px rgba(231, 76, 60, 0.5);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+    color:  $white;
+    background-color: $black;
+
+    &-eat {
+        background-color: $red;
+    }
+
+    &-drink {
+        background-color: $blue;
+    }
+
+    &-sleep {
+        background-color: $orange;
+    }
+
+    &-work {
+        background-color: $gray;
+    }
+}

@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) and (min-width: 360px) {
+    .btn {
+        width: 100%;
+    }
+
+    .bar {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 360px) {
+    .app {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .bar {
+        width: 100%;
+    }
+}
