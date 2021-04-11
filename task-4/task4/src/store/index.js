@@ -1,15 +1,20 @@
 import { makeAutoObservable } from 'mobx';
 
 console.log (history);
+
+// const default_value = health = 50, hungry = 50, thrist = 50, stamina = 50;
+const DEFAULT_VALUE = 50;
+
 class Store {
     /** Здоровье */
-    health = 50;
+    health = DEFAULT_VALUE;
     /** Голод */
-    hungry = 50;
+    hungry = DEFAULT_VALUE;
     /** Жажда */
-    thrist = 50;
+    thrist = DEFAULT_VALUE;
     /** Усталость */
-    stamina = 50;
+    stamina = DEFAULT_VALUE;
+    
 
     history = []
 
@@ -29,10 +34,7 @@ class Store {
     }
 
     restart() {
-        this.health = 50;
-        this.hungry = 50;
-        this.thrist = 50;
-        this.stamina = 50;
+        this.health = this.hungry = this.thrist = this.stamina = DEFAULT_VALUE;
         this.history = [];
     }
     eat() {

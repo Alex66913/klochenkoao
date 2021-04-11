@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="app">
       <div className="container">
-      <p>Здоровье:</p>
+        <p>Здоровье:</p>
         <Bar type="health" value={store.health}></Bar>
         <p>Голод:</p>
         <Bar type="hungry" value={store.hungry}></Bar>

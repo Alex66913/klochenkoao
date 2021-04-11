@@ -10,7 +10,6 @@ export const DeadModal = observer(function DeadModal(props) {
 
     return (
         <div className="hiddenWrapper">
-            <div className="modal-wrapper" />
             <div className="modal dead">
                 <p>Жека умер</p>
                 <Button onClick={handleClick}>Да здравствует новый Жека</Button>

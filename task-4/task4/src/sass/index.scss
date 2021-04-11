@@ -6,7 +6,6 @@
 @import "./components/button";
 @import "./globals/media";
 
-
 .app {
     display: flex;
     
@@ -42,12 +41,33 @@ p {
 }
 
 .hiddenWrapper {
-    margin: 0 5px 5px 0;
-    padding: 5px;
+    // margin: 0 5px 5px 0;
+    // padding: 5px;
 
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    // border: 1px solid rgba(0, 0, 0, 0.3);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-.modal-wrapper{
-    width: 100%;
+.modal {
+    background-color: #ffffff;
+    padding: 10px;
+    min-width: 250px;
+}
+
+.history {
+    &-content {
+        max-height: 50vh;
+        overflow-y: auto;
+    }
 }
