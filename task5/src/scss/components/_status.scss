@@ -1,0 +1,27 @@
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // flex-grow: 1;
+    
+    padding: 0 17px;
+    
+    width: 100px;
+    height: 18px;
+
+    
+    @include border-radius;
+
+    &.pending {
+        background-color: $pending;
+    }
+    &.cancelled {
+        background-color: $cancelled;
+    }
+    &.completed {
+        background-color: $completed;
+    }
+    &.in-progress {
+        background-color: $in-progress;
+    }
+}

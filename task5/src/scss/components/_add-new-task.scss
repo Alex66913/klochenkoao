@@ -1,0 +1,16 @@
+.add-new-task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 140px;
+    height: 34px;
+
+    background-color: $purple;
+    color: $white;
+
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+}

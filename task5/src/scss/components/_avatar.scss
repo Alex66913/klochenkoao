@@ -1,0 +1,21 @@
+.profile {
+    display: inline-flex;
+    background: transparent;
+    padding: 2px;
+    border-radius: 50%;
+    background: conic-gradient(from 180deg at 60% 50%, #FD648E 0deg, #884CB2 178.12deg, #FD648E 360deg);
+
+    cursor: pointer;
+    
+    &.-history {
+        background: conic-gradient(from 180deg at 60% 50%, $blue, $aquamarine, $blue 360deg);
+    }
+
+    &-image {
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        background: gray;
+        border: 1px solid #ffffff;
+    }
+}

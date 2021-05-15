@@ -1,0 +1,21 @@
+.action {
+    display: flex;
+
+    cursor: default;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+
+    background-color: $light-white;
+    color: $light-gray;
+
+    &:hover {
+        background-color: $light-gray;
+        color: $light-white;
+    }  
+}

@@ -1,0 +1,55 @@
+.rank { 
+    display: flex;
+    width: 80px;
+    // flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    // margin-left: 10%;
+    // max-width: 15%;
+
+    & &-dot{
+        padding: 2px;
+        border-radius: 50%;
+        border: 2px solid;
+        margin-right: 6px;
+        // margin-left: 90px;
+    }
+
+    &.minor{
+        .rank-dot {
+            border-color: $minor;
+        }
+    }
+
+    &.normal{
+        .rank-dot {
+            border-color: $normal;
+        }
+    }
+
+    &.critical {
+        .rank-dot {
+            border-color: $critical;
+        }
+    }
+
+//     &-dot {
+        
+//     display: inline-flex;
+
+//     justify-content: center;
+//     align-items: center;
+
+//     width: 8px;
+//     height: 8px;
+
+//     background: transparent;
+
+//     padding: 2px;
+
+//     border-radius: 50%;
+
+//     background: $green;
+
+//     }
+}

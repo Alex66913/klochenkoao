@@ -1,0 +1,70 @@
+@import './list',
+    './status',
+    './rank',
+    './users',
+    './avatar',
+    './dot',
+    './title',
+    './rank-dot',
+    './more',
+    './search',
+    './add-new-task',
+    './history',
+    './app';
+
+.desktop {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px 40px 90px 70px;
+    max-width: 1500px;
+    max-height: 100vw;
+    border-radius: 30px;
+    background: $white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1 0 100%;
+}
+
+.content-header {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    padding-bottom: 20px;
+}
+
+.search-container {
+    width: 45%;
+}
+
+.account {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.notification {
+    padding-right: 30px;
+    cursor: pointer;
+    &-dot {
+        @include dot;
+
+        width: 8px;
+        height: 8px;
+
+        background-color: $red;
+
+        border: 1px solid $white;
+        position: relative;
+
+        top: -12px;
+        left: -12px;
+    }
+}

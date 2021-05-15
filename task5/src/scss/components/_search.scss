@@ -1,0 +1,21 @@
+.custom-search {
+    .ant-input-group {
+        display: flex;
+        align-items: center;
+
+        .ant-input {
+            padding-left: 32px;
+        }
+    
+        .ant-input-group-addon {
+            order: -1;
+            top: -1px;
+
+            .ant-btn {
+                border: none;
+                pointer-events: none;
+            }
+        }
+    
+    }
+}

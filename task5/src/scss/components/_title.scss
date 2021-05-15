@@ -1,0 +1,20 @@
+.title {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+    text-overflow: ellipsis;
+
+    width: 390px;
+
+    padding-left: 6px;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $light-gray;
+        border-radius: 5px;
+    }
+}

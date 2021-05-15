@@ -1,0 +1,24 @@
+.dot {
+
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+
+    padding: 1.8px 1.6px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(270deg, $dark-red, $dark-purple);
+
+    &-in {
+        width: 4.4px;
+        height: 4.7px;
+
+        border-radius: 50%;
+        
+        background: linear-gradient(270deg, $light-red, $light-purple);
+    }
+}
